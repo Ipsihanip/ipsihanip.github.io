@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko" data-theme="dark">
+<html lang="ko" data-theme="light">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>입시한입 | 2027 정시·수시모집요강 대문</title>
 <meta name="description" content="2027학년도 정시모집과 수시모집, 하나의 대문에서. 정시한입(196개 대학 정시요강·학과별 70% 컷·과목별 원점수/백분위 계산기)과 수시한입(196개 대학 수시요강·학과별 내신 컷·내신+수능최저 동시 판정)으로 바로 이동하세요." />
-<meta name="theme-color" content="#070c14" id="meta-theme" />
+<meta name="theme-color" content="#f6f8fc" id="meta-theme" />
 <meta name="naver-site-verification" content="60ca68a90551baefe9fde7d2a1d3c920a00202d9" />
 <meta name="google-site-verification" content="K5O3iNskbZvtzXDSeTjzgDr_K2VghQI9bsNkbQ6hLq8" />
 <link rel="canonical" href="https://ipsihanip.github.io/" />
@@ -44,11 +44,11 @@
       </span>
     </a>
     <div class="theme-switch" role="group" aria-label="화면 테마 선택">
-      <button type="button" data-theme-set="light" aria-pressed="false" title="화이트 모드">
+      <button type="button" data-theme-set="light" aria-pressed="true" title="화이트 모드">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
         <span>라이트</span>
       </button>
-      <button type="button" data-theme-set="dark" aria-pressed="true" title="다크 모드">
+      <button type="button" data-theme-set="dark" aria-pressed="false" title="다크 모드">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.5 14.6A8.5 8.5 0 1 1 9.4 3.5a6.9 6.9 0 0 0 11.1 11.1Z"/></svg>
         <span>다크</span>
       </button>
@@ -150,7 +150,7 @@
   }
   var saved=null;
   try{ saved=localStorage.getItem(KEY); }catch(e){}
-  apply(saved==='light'||saved==='dark'?saved:'dark');
+  apply(saved==='dark'?'dark':'light');
 
   document.addEventListener('click',function(ev){
     var b=ev.target.closest?ev.target.closest('[data-theme-set]'):null;
